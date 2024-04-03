@@ -151,7 +151,7 @@ header {
     padding: 0;
     margin: 0;
     /* Setting background image for the home page */
-    background: url('./assets/images/Banner.svg');
+    background: url('Banner.svg');
     /* Positioning background image */
     background-position: center;
     background-repeat: no-repeat;
