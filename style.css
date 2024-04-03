@@ -1,0 +1,544 @@
+/* Importing Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Styling for the entire body */
+body {
+  /* Setting font family to Inter with fallback to sans-serif */
+  font-family: "Inter", sans-serif;
+  /* Setting text color to white */
+  color: #ffffff;
+  /* Adding padding around the body */
+  padding: 10px;
+  /* Making body a flex container with column layout */
+  display: flex;
+  flex-direction: column;
+  /* Adjusting position relative to the top edge of the card */
+  top: 100%;
+}
+
+/* Styling for the logo */
+.logo{
+    /* Setting logo color */
+    color: #CF2D2D;
+    /* Setting font size */
+    font-size: 1.3rem;
+    /* Setting font weight */
+    font-weight: 700;
+    /* Adding margin around the logo */
+    margin: 1rem 6rem;
+}
+
+/* Styling for the header section */
+header {
+    /* Making header a flex container */
+    display: flex;
+    /* Aligning items vertically center */
+    align-items: center;
+    /* Allowing items to wrap to the next line if needed */
+    flex-wrap: wrap;
+}
+
+/* Styling for the search bar container */
+.searchDiv{
+    /* Adding margin around the search bar */
+    margin: 1rem 2rem;
+    /* Adding border around the search bar */
+    border: 1px solid #ccc;
+    /* Adding border radius to the search bar */
+    border-radius: 7px;
+    /* Adding padding to the right side of the search bar */
+    padding-right: 1rem;
+}
+
+/* Styling for the search input field */
+#search{
+    /* Removing default border and outline */
+    border: none;
+    outline: none;
+    /* Setting width of the search input */
+    width: 300px;
+}
+
+/* Styling for the categories section */
+.catagories {
+    /* Adding margin to the left side of the categories */
+    margin-left: 3rem;
+    /* Making categories a flex container */
+    display: flex;
+    /* Justifying content with space-evenly */
+    justify-content: space-evenly;
+    /* Aligning items vertically center */
+    align-items: center;
+    /* Allowing items to wrap to the next line if needed */
+    flex-wrap: wrap;
+}
+
+/* Styling for the bars icon */
+.fa-bars{
+    /* Adding margin to the right side of the bars icon */
+    margin-right: .5rem;
+}
+
+/* Styling for the categories title */
+.catagories-title{
+    /* Centering text horizontally */
+    text-align: center;
+}
+
+/* Styling for the favorites section */
+.fav {
+    /* Adding margin to the left side of the favorites */
+    margin-left: 5rem;
+    /* Making favorites a flex container */
+    display: flex;
+    /* Aligning items vertically center */
+    align-items: center;
+    /* Justifying content with center */
+    justify-content: center;
+    /* Allowing items to wrap to the next line if needed */
+    flex-wrap: wrap;
+}
+
+/* Styling for the favorites icon */
+.fav-icon{
+    /* Centering text horizontally */
+    text-align: center;
+    /* Centering element horizontally */
+    margin: 0 auto;
+}
+
+/* Styling for the heart icon */
+.fa-heart{
+    /* Setting heart icon color */
+    color: #ccc;
+}
+
+/* Styling for the sign-in button */
+.sign-in{
+    /* Adding margin to the left side of the sign-in button */
+    margin-left: 3rem;
+    /* Centering text horizontally */
+    text-align: center;
+    /* Adding border around the sign-in button */
+    border: 1px solid #ccc;
+    /* Setting background color of the sign-in button to transparent */
+    background-color: transparent;
+    /* Adding padding around the sign-in button */
+    padding: .5rem;
+    /* Adding border radius to the sign-in button */
+    border-radius: 7px;
+}
+
+/* Styling for the navbar brand */
+.navbar-brand{
+    /* Adding margin to the left side of the navbar brand */
+    margin-left: 3rem;
+    /* Centering text horizontally */
+    text-align: center;
+}
+
+/* Styling for the navbar navigation */
+.navbar-nav{
+    /* Adding margin to the left side of the navbar navigation */
+    margin-left: 10rem;
+}
+
+/* Styling for the home page section */
+.home-page{
+    /* Setting height of the home page section to 100% of viewport height */
+    height: 100vh;
+    /* Resetting padding and margin */
+    padding: 0;
+    margin: 0;
+    /* Setting background image for the home page */
+    background: url('./assets/images/Banner.svg');
+    /* Positioning background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Setting width of the home page section to 100% */
+    width: 100%;
+}
+
+/* Styling for the home page title */
+.homePageTitle{
+  /* Centering text horizontally */
+  text-align: center;
+  /* Setting font size */
+  font-size: 4rem;
+  /* Capitalizing text */
+  text-transform: capitalize;
+  /* Adding padding around the home page title */
+  padding: 4rem;
+  /* Setting text color to white */
+  color: #ffffff;
+}
+
+/* Styling for the home page description title */
+.homePageDescriptionTitle{
+  /* Centering text horizontally */
+  text-align: center;
+  /* Setting font size */
+  font-size: 1rem;
+  /* Capitalizing text */
+  text-transform: capitalize;
+  /* Resetting margin and padding */
+  margin: 0;
+  padding: 0;
+  /* Setting text color to white */
+  color: #ffffff;
+}
+
+/* Styling for the event cards container */
+#eventCards {
+  /* Making event cards container a flex container */
+  display: flex;
+  /* Allowing horizontal scrolling */
+  overflow-x: scroll;
+  /* Preventing line breaks in text */
+  white-space: nowrap;
+}
+
+/* Styling for the event container */
+.event-container{
+  /* Setting position to relative */
+  position: relative;
+  /* Adjusting position relative to the bottom edge of the card */
+  bottom: 200px;
+}
+
+/* Styling for individual event cards */
+.card {
+  /* Setting flex basis */
+  flex: 0 0 auto;
+  /* Setting width of the card */
+  width: 300px;
+  /* Adding margin around the card */
+  margin: 2rem;
+  /* Adding margin to the right side of the card */
+  margin-right: 20px;
+  /* Adding border around the card */
+  border: 1px solid #ccc;
+  /* Adding border radius to the card */
+  border-radius: 5px;
+  /* Hiding overflow content */
+  overflow: hidden;
+  /* Applying grayscale filter to the card */
+  filter: grayscale(50%);
+  /* Adding transition effect to grayscale */
+  transition: filter 0.3s ease;
+}
+
+/* Styling for card hover effect */
+.card:hover {
+  /* Moving card upward on hover */
+  transform: translateY(-20px);
+  /* Removing grayscale filter on hover */
+  filter: grayscale(0%);
+  /* Changing cursor to pointer on hover */
+  cursor: pointer;
+  /* Adding transition effect to all properties */
+  transition: all .3s ease-in;
+}
+
+/* Styling for card images */
+.card img {
+  /* Setting width of the image */
+  width: 300px;
+  /* Setting height of the image */
+  height: 400px;
+  /* Adding border radius to the top-left corner */
+  border-top-left-radius: 5px;
+  /* Adding border radius to the top-right corner */
+  border-top-right-radius: 5px;
+}
+
+/* Styling for the body section */
+.body {
+  /* Setting position to absolute */
+  position: absolute;
+  /* Setting position from the top */
+  top: 250px;
+  /* Setting text color to white */
+  color: #ffffff;
+  /* Adding padding around the body */
+  padding: 10px;
+  /* Making body a flex container with column layout */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for name and city section */
+.nameAndCity {
+  /* Making name and city a flex container with column layout */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Styling for date and weather section */
+.dateAndWeather {
+  /* Making date and weather a flex container */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling for card title */
+.card-title {
+  /* Setting margin top to zero */
+  margin-top: 0;
+}
+
+/* Styling for card body paragraph */
+.card-body p {
+  /* Setting margin bottom */
+  margin-bottom: 5px;
+}
+
+/* Styling for titles of event section */
+.titlesOfEvent{
+  /* Making titles of event a flex container */
+  display: flex;
+  flex-wrap: wrap;
+  /* Justifying content with space between */
+  justify-content: space-between;
+  /* Adding margin around titles of event */
+  margin: 2rem 2rem;
+}
+
+/* Styling for recommended shows title */
+.RecommendedShows{
+  /* Setting font size */
+  font-size: 1.3rem;
+  /* Capitalizing text */
+  text-transform: capitalize;
+  /* Setting text color to white */
+  color: #ffffff;
+}
+
+/* Styling for see all title */
+.seeAll{
+  /* Setting font size */
+  font-size: 1.3rem;
+  /* Capitalizing text */
+  text-transform: capitalize;
+  /* Setting text color to white */
+  color: #ffffff;
+  /* Adding underline to text */
+  text-decoration: underline;
+}
+
+/* Styling for loading spinner */
+#loading-spinner {
+  /* Hiding loading spinner by default */
+  display: none;
+  /* Setting position to fixed */
+  position: fixed;
+  /* Centering loading spinner horizontally */
+  top: 50%;
+  left: 50%;
+  /* Adding border around the loading spinner */
+  border: 3px solid red;
+  /* Adding border radius to the loading spinner */
+  border-radius: 50%;
+  /* Removing right border */
+  border-right: none;
+  /* Setting width of the loading spinner */
+  width: 50px;
+  /* Setting height of the loading spinner */
+  height: 50px;
+  /* Translating loading spinner to center */
+  transform: translate(-50%, -50%);
+  /* Setting z-index */
+  z-index: 1;
+  /* Setting color of the loading spinner */
+  color: #CF2D2D;
+  /* Applying animation to the loading spinner */
+  animation: spinner 1s ease infinite forwards;
+}
+
+/* Keyframes for spinner animation */
+@keyframes spinner {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+/* Styling for events list */
+#events-list {
+  /* Making events list a grid container */
+  display: grid;
+  /* Setting grid template columns */
+  grid-template-columns: 2.3fr 2.3fr 2.3fr;
+}
+
+/* Styling for individual event cards */
+.event-card {
+  /* Adding margin around event card */
+  margin-left: 2rem;
+  margin-right: 2rem;
+  /* Adding bottom margin between rows */
+  margin-bottom: 20px;
+  /* Adding border around event card */
+  border: 1px solid #ccc;
+  /* Adding border radius to event card */
+  border-radius: 5px;
+  /* Hiding overflow content */
+  overflow: hidden;
+}
+
+/* Styling for event details section */
+.event-details {
+  /* Adding padding around event details */
+  padding: 10px;
+}
+
+/* Styling for event card images */
+.event-card img {
+  /* Setting width of the image */
+  width: 100%;
+  /* Setting height of the image */
+  height: auto;
+  /* Adding border radius to the top-left corner */
+  border-top-left-radius: 5px;
+  /* Adding border radius to the top-right corner */
+  border-top-right-radius: 5px;
+}
+
+/* Styling for event details title */
+.event-details h2 {
+  /* Setting margin top to zero */
+  margin-top: 0;
+  /* Setting margin bottom */
+  margin-bottom: 5px;
+}
+
+/* Styling for event details paragraph */
+.event-details p {
+  /* Setting margin to zero */
+  margin: 0;
+}
+
+/* Media query for adjusting card spacing for smaller screens */
+@media (max-width: 768px) {
+  .event-card {
+    /* Setting flex basis for each card */
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+/* Media query for adjusting card spacing for even smaller screens */
+@media (max-width: 576px) {
+  #events-list  {
+    /* Making events list a flex container */
+    display: flex;
+    /* Setting flex direction to column */
+    flex-direction: column;
+    /* Centering items horizontally */
+    align-items: center;
+    /* Centering items vertically */
+    justify-content: center;
+  }
+}
+
+/* Additional media query for smaller screens */
+@media (max-width: 576px) {
+  /* Styling for header section */
+  header{
+    /* Making header a flex container */
+    display: flex;
+    /* Setting flex direction to row */
+    flex-direction: row;
+    /* Justifying content with space between */
+    justify-content: space-between;
+  }
+  /* Hiding toggle button */
+  .btn{
+    display: none;
+  }
+  /* Hiding search div */
+  .searchDiv{
+    display: none;
+  }
+ 
+  /* Styling for home page section */
+  .home-page{
+    /* Setting height of the home page section to 100% of viewport height */
+    height: 100vh;
+    /* Setting width of the home page section to 100% */
+    width: 100%;
+  }
+
+  /* Styling for home page title */
+  .homePageTitle{
+    /* Setting font size */
+    font-size: 2rem;
+    /* Removing padding around home page title */
+    padding: 2rem;
+    /* Adding margin top */
+    margin-top: 8rem;
+  }
+  /* Hiding categories section */
+  .catagories{
+    display: none;
+  }
+  /* Resetting margin and padding for logo */
+  .log{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Additional media query for even smaller screens */
+@media (max-width: 376px) {
+  /* Styling for header section */
+  header{
+    /* Making header a flex container */
+    display: flex;
+    /* Setting flex direction to row */
+    flex-direction: row;
+    /* Justifying content with space between */
+    justify-content: space-between;
+  }
+  /* Hiding toggle button */
+  .btn{
+    display: none;
+  }
+  /* Hiding search div */
+  .searchDiv{
+    display: none;
+  }
+ 
+  /* Styling for home page section */
+  .home-page{
+    /* Setting height of the home page section to 100% of viewport height */
+    height: 100vh;
+    /* Setting width of the home page section to 100% */
+    width: 100%;
+  }
+
+  /* Styling for home page title */
+  .homePageTitle{
+    /* Setting font size */
+    font-size: 2rem;
+    /* Removing padding around home page title */
+    padding: 0;
+    /* Adding margin top */
+    margin-top: 1rem;
+  }
+  /* Hiding categories section */
+  .catagories{
+    display: none;
+  }
+  /* Resetting margin and padding for logo */
+  .log{
+    margin: 0;
+    padding: 0;
+  }
+}
